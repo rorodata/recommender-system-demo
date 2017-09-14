@@ -3,4 +3,4 @@ runtime: rorodata/sandbox
 
 services:
   - name: default
-    function: recommender.predict
+    function: predict.predict
