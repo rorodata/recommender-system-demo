@@ -122,7 +122,7 @@ def predict(user_id):
     try:
         return reco_model.reco_topk_items_for_user(user_id=user_id)
     except:
-        return -1
+        return []
 
 if __name__ == '__main__':
     train()
