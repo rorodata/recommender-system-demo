@@ -111,12 +111,6 @@ def train():
 
 _model = None
 
-def load_mapper():
-    global _mapper
-    if _mapper is None:
-        _mapper = joblib.load("/volumes/data/recommender-model.pkl")
-    return _mapper
-
 def load_model():
     global _model
     if _model is None:
