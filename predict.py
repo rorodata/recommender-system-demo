@@ -11,6 +11,7 @@ def load_model():
 def predict(user_id):
     reco_model = load_model()
     try:
-        return reco_model.reco_topk_items_for_user(user_id=user_id)
+        retval = reco_model.reco_topk_items_for_user(user_id=user_id).to_dict()
+        return [{'item_id':int(k), 'rating':float(v)} for (k,v) in retval.items()]
     except:
         return []
