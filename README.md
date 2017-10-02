@@ -30,7 +30,7 @@ Created project: movie-reco
 
 > roro deploy
 Deploying project movie-reco. This may take a few moments ...
-Restarted {} services. 1
+Restarted one service.
 default: https://movie-reco.rorocloud.io/
 
 # run training to create trained model
